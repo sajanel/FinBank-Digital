@@ -4,7 +4,6 @@
 
 Esta API de validación de conexión segura integra [Plaid](https://plaid.com/) para realizar pruebas y validaciones de conexiones bancarias. Plaid es una plataforma que permite conectar aplicaciones con cuentas bancarias de manera segura, facilitando el intercambio de información financiera.
 
-![Plaid Logo](https://plaid.com/favicon.ico)
 
 ### Características
 
