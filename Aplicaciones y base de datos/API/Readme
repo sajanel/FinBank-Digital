@@ -1,4 +1,4 @@
-# API de Validación de Conexión con Plaid
+#API de Validación de Conexión con Plaid
 
 Este repositorio contiene la implementación de una API de validación de conexión segura que integra Plaid para realizar pruebas y validaciones de las conexiones bancarias. Plaid es una plataforma que permite conectar aplicaciones con cuentas bancarias de manera segura y verificar la autenticidad de las conexiones.
 
