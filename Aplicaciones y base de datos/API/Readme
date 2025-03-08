@@ -1,1 +1,41 @@
+# API de Validación de Conexión con Plaid
 
+Este repositorio contiene la implementación de una API de validación de conexión segura que integra Plaid para realizar pruebas y validaciones de las conexiones bancarias. Plaid es una plataforma que permite conectar aplicaciones con cuentas bancarias de manera segura y verificar la autenticidad de las conexiones.
+
+## Descripción
+
+La API realiza validaciones con diversas plataformas de información bancaria, siendo Plaid uno de los ejemplos principales para estas validaciones. Plaid se utiliza para conectar cuentas bancarias de usuarios y permitir el intercambio de información financiera de manera segura.
+
+### Características
+
+- **Integración con Plaid**: La API está configurada para trabajar con Plaid, permitiendo validar las conexiones entre aplicaciones y bancos de manera eficiente.
+- **Conexión segura**: Utiliza claves de API (API Key) para garantizar que las conexiones sean seguras y solo las aplicaciones autorizadas puedan realizar peticiones.
+- **Pruebas de conexión**: La API realiza pruebas de conexión, recolectando información sobre las conexiones, como códigos de estado, imágenes y detalles relevantes para asegurar el correcto funcionamiento de la conexión.
+
+## Instrucciones de Uso
+
+### Requisitos
+
+1. **API Key de Plaid**: Necesitarás una clave de API de Plaid para poder realizar las validaciones.
+2. **Herramienta de pruebas (Postman)**: Se recomienda usar Postman para realizar las pruebas de conexión. Las pruebas pueden incluir códigos y respuestas que te permitirán verificar la validez de la conexión.
+
+### Cómo hacer pruebas de conexión
+
+1. Regístrate en [Plaid](https://plaid.com/) para obtener tu API Key.
+2. Configura el entorno de pruebas en Postman.
+3. Realiza las peticiones a la API para validar la conexión con Plaid.
+4. La API te devolverá códigos de estado y detalles de las conexiones, incluyendo imágenes y datos relevantes para garantizar que todo esté funcionando correctamente.
+
+### Ejemplo de solicitud
+
+```http
+POST /v1/validate_connection
+Host: api.tuservicio.com
+Content-Type: application/json
+Authorization: Bearer {API_KEY}
+
+{
+  "plaid_client_id": "{PLAID_CLIENT_ID}",
+  "plaid_secret": "{PLAID_SECRET}",
+  "account_number": "1234567890"
+}
