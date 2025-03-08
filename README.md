@@ -1,7 +1,7 @@
 # FinBank-Digital
 
 ## III. Infraestructura de TI
-### III.1. Escaneo de vulnerabilidades en servidores (Nessus/OpenVAS)
+### III.1. Escaneo de vulnerabilidades en servidores (Nessus)
 - Se utilizarán herramientas como **Nessus** para identificar vulnerabilidades en servidores críticos.
 - Se generarán reportes detallados de vulnerabilidades encontradas y posibles mitigaciones.
 
