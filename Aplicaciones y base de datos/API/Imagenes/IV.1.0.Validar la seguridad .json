@@ -1,9 +1,0 @@
-{
-  "display_message": null,
-  "documentation_url": "https://plaid.com/docs/?ref=error#invalid-request-errors",
-  "error_code": "INVALID_FIELD",
-  "error_message": "client_id must be a properly formatted, non-empty string",
-  "error_type": "INVALID_REQUEST",
-  "request_id": "N0TEzQI1j2s7S1W",
-  "suggested_action": null
-}
