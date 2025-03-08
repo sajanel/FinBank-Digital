@@ -1,0 +1,40 @@
+transferDB> db.transfers.find()
+[
+  {
+    _id: ObjectId('67cc8dd49701af77c7497427'),
+    account_number: '123456',
+    amount: 1000,
+    __v: 0
+  },
+  {
+    _id: ObjectId('67cc8dfd9701af77c7497429'),
+    account_number: '1234567',
+    amount: 1000,
+    __v: 0
+  },
+  {
+    _id: ObjectId('67cc8e049701af77c749742b'),
+    account_number: '0',
+    amount: 1000,
+    __v: 0
+  },
+  {
+    _id: ObjectId('67cc8e159701af77c749742d'),
+    account_number: '0',
+    amount: 1000,
+    __v: 0
+  },
+  {
+    _id: ObjectId('67cc8e169701af77c749742f'),
+    account_number: '0',
+    amount: 1000,
+    __v: 0
+  },
+  {
+    _id: ObjectId('67cc8e179701af77c7497431'),
+    account_number: '0',
+    amount: 1000,
+    __v: 0
+  }
+]
+transferDB>
