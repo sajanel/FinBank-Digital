@@ -1,32 +1,32 @@
-#API de Validación de Conexión con Plaid
-
-Este repositorio contiene la implementación de una API de validación de conexión segura que integra Plaid para realizar pruebas y validaciones de las conexiones bancarias. Plaid es una plataforma que permite conectar aplicaciones con cuentas bancarias de manera segura y verificar la autenticidad de las conexiones.
+# API de Validación de Conexión con Plaid
 
 ## Descripción
 
-La API realiza validaciones con diversas plataformas de información bancaria, siendo Plaid uno de los ejemplos principales para estas validaciones. Plaid se utiliza para conectar cuentas bancarias de usuarios y permitir el intercambio de información financiera de manera segura.
+Esta API de validación de conexión segura integra [Plaid](https://plaid.com/) para realizar pruebas y validaciones de conexiones bancarias. Plaid es una plataforma que permite conectar aplicaciones con cuentas bancarias de manera segura, facilitando el intercambio de información financiera.
+
+![Plaid Logo](https://plaid.com/favicon.ico)
 
 ### Características
 
-- **Integración con Plaid**: La API está configurada para trabajar con Plaid, permitiendo validar las conexiones entre aplicaciones y bancos de manera eficiente.
-- **Conexión segura**: Utiliza claves de API (API Key) para garantizar que las conexiones sean seguras y solo las aplicaciones autorizadas puedan realizar peticiones.
-- **Pruebas de conexión**: La API realiza pruebas de conexión, recolectando información sobre las conexiones, como códigos de estado, imágenes y detalles relevantes para asegurar el correcto funcionamiento de la conexión.
+- **Integración con Plaid**: Conecta la API con [Plaid](https://plaid.com/), permitiendo validar conexiones entre aplicaciones y bancos de manera eficiente.
+- **Conexión segura**: Utiliza **API Key** para garantizar conexiones seguras.
+- **Pruebas de conexión**: La API realiza pruebas y valida las conexiones, proporcionando códigos de estado y detalles para asegurar el funcionamiento correcto.
 
-## Instrucciones de Uso
+## 🚀 Instrucciones de Uso
 
-### Requisitos
+### 📋 Requisitos
 
-1. **API Key de Plaid**: Necesitarás una clave de API de Plaid para poder realizar las validaciones.
-2. **Herramienta de pruebas (Postman)**: Se recomienda usar Postman para realizar las pruebas de conexión. Las pruebas pueden incluir códigos y respuestas que te permitirán verificar la validez de la conexión.
+1. **API Key de Plaid**: Necesitarás una clave de API de Plaid para realizar las validaciones. [Obtenla aquí](https://plaid.com/docs/).
+2. **Herramienta de pruebas**: Se recomienda usar [Postman](https://www.postman.com/) para realizar las pruebas de conexión.
 
-### Cómo hacer pruebas de conexión
+### 🔧 Cómo hacer pruebas de conexión
 
-1. Regístrate en [Plaid](https://plaid.com/) para obtener tu API Key.
-2. Configura el entorno de pruebas en Postman.
-3. Realiza las peticiones a la API para validar la conexión con Plaid.
-4. La API te devolverá códigos de estado y detalles de las conexiones, incluyendo imágenes y datos relevantes para garantizar que todo esté funcionando correctamente.
+1. Regístrate en [Plaid](https://plaid.com/) y obtiene tu **API Key**.
+2. Configura el entorno en [Postman](https://www.postman.com/).
+3. Realiza peticiones a la API para validar la conexión con Plaid.
+4. La API te devolverá códigos de estado y detalles sobre la conexión, como imágenes y otros datos importantes.
 
-### Ejemplo de solicitud
+### 📝 Ejemplo de solicitud
 
 ```http
 POST /v1/validate_connection
