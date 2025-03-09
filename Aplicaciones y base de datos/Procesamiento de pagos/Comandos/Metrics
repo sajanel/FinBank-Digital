@@ -1,0 +1,539 @@
+sergio@Sergio:~$ curl http://localhost:4000/metrics
+# HELP http_request_duration_seconds duration histogram of http responses labeled with: status_code, method, path
+# TYPE http_request_duration_seconds histogram
+http_request_duration_seconds_bucket{le="0.003",status_code="404",method="GET",path="/api/transfer"} 0
+http_request_duration_seconds_bucket{le="0.03",status_code="404",method="GET",path="/api/transfer"} 1
+http_request_duration_seconds_bucket{le="0.1",status_code="404",method="GET",path="/api/transfer"} 1
+http_request_duration_seconds_bucket{le="0.3",status_code="404",method="GET",path="/api/transfer"} 1
+http_request_duration_seconds_bucket{le="1.5",status_code="404",method="GET",path="/api/transfer"} 1
+http_request_duration_seconds_bucket{le="10",status_code="404",method="GET",path="/api/transfer"} 1
+http_request_duration_seconds_bucket{le="+Inf",status_code="404",method="GET",path="/api/transfer"} 1
+http_request_duration_seconds_sum{status_code="404",method="GET",path="/api/transfer"} 0.01246183
+http_request_duration_seconds_count{status_code="404",method="GET",path="/api/transfer"} 1
+http_request_duration_seconds_bucket{le="0.003",status_code="400",method="POST",path="/api/transfer"} 0
+http_request_duration_seconds_bucket{le="0.03",status_code="400",method="POST",path="/api/transfer"} 1
+http_request_duration_seconds_bucket{le="0.1",status_code="400",method="POST",path="/api/transfer"} 1
+http_request_duration_seconds_bucket{le="0.3",status_code="400",method="POST",path="/api/transfer"} 1
+http_request_duration_seconds_bucket{le="1.5",status_code="400",method="POST",path="/api/transfer"} 1
+http_request_duration_seconds_bucket{le="10",status_code="400",method="POST",path="/api/transfer"} 1
+http_request_duration_seconds_bucket{le="+Inf",status_code="400",method="POST",path="/api/transfer"} 1
+http_request_duration_seconds_sum{status_code="400",method="POST",path="/api/transfer"} 0.015536105
+http_request_duration_seconds_count{status_code="400",method="POST",path="/api/transfer"} 1
+
+# HELP up 1 = up, 0 = not up
+# TYPE up gauge
+up 1
+
+# HELP process_cpu_user_seconds_total Total user CPU time spent in seconds.
+# TYPE process_cpu_user_seconds_total counter
+process_cpu_user_seconds_total 1.065485
+
+# HELP process_cpu_system_seconds_total Total system CPU time spent in seconds.
+# TYPE process_cpu_system_seconds_total counter
+process_cpu_system_seconds_total 0.256928
+
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 1.322413
+
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1741474117
+
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 75014144
+
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 895950848
+
+# HELP process_heap_bytes Process heap size in bytes.
+# TYPE process_heap_bytes gauge
+process_heap_bytes 130387968
+
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 26
+
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 1048576
+
+# HELP nodejs_eventloop_lag_seconds Lag of event loop in seconds.
+# TYPE nodejs_eventloop_lag_seconds gauge
+nodejs_eventloop_lag_seconds 0
+
+# HELP nodejs_eventloop_lag_min_seconds The minimum recorded event loop delay.
+# TYPE nodejs_eventloop_lag_min_seconds gauge
+nodejs_eventloop_lag_min_seconds 0.008568832
+
+# HELP nodejs_eventloop_lag_max_seconds The maximum recorded event loop delay.
+# TYPE nodejs_eventloop_lag_max_seconds gauge
+nodejs_eventloop_lag_max_seconds 0.033226751
+
+# HELP nodejs_eventloop_lag_mean_seconds The mean of the recorded event loop delays.
+# TYPE nodejs_eventloop_lag_mean_seconds gauge
+nodejs_eventloop_lag_mean_seconds 0.010138587330433978
+
+# HELP nodejs_eventloop_lag_stddev_seconds The standard deviation of the recorded event loop delays.
+# TYPE nodejs_eventloop_lag_stddev_seconds gauge
+nodejs_eventloop_lag_stddev_seconds 0.0001973904212120785
+
+# HELP nodejs_eventloop_lag_p50_seconds The 50th percentile of the recorded event loop delays.
+# TYPE nodejs_eventloop_lag_p50_seconds gauge
+nodejs_eventloop_lag_p50_seconds 0.010133503
+
+# HELP nodejs_eventloop_lag_p90_seconds The 90th percentile of the recorded event loop delays.
+# TYPE nodejs_eventloop_lag_p90_seconds gauge
+nodejs_eventloop_lag_p90_seconds 0.010215423
+
+# HELP nodejs_eventloop_lag_p99_seconds The 99th percentile of the recorded event loop delays.
+# TYPE nodejs_eventloop_lag_p99_seconds gauge
+nodejs_eventloop_lag_p99_seconds 0.010346495
+
+# HELP nodejs_active_resources Number of active resources that are currently keeping the event loop alive, grouped by async resource type.
+# TYPE nodejs_active_resources gauge
+nodejs_active_resources{type="TTYWrap"} 3
+nodejs_active_resources{type="TCPSocketWrap"} 4
+nodejs_active_resources{type="TCPServerWrap"} 1
+nodejs_active_resources{type="Timeout"} 1
+nodejs_active_resources{type="Immediate"} 1
+
+# HELP nodejs_active_resources_total Total number of active resources.
+# TYPE nodejs_active_resources_total gauge
+nodejs_active_resources_total 10
+
+# HELP nodejs_active_handles Number of active libuv handles grouped by handle type. Every handle type is C++ class name.
+# TYPE nodejs_active_handles gauge
+nodejs_active_handles{type="WriteStream"} 2
+nodejs_active_handles{type="ReadStream"} 1
+nodejs_active_handles{type="Socket"} 4
+nodejs_active_handles{type="Server"} 1
+
+# HELP nodejs_active_handles_total Total number of active handles.
+# TYPE nodejs_active_handles_total gauge
+nodejs_active_handles_total 8
+
+# HELP nodejs_active_requests Number of active libuv requests grouped by request type. Every request type is C++ class name.
+# TYPE nodejs_active_requests gauge
+
+# HELP nodejs_active_requests_total Total number of active requests.
+# TYPE nodejs_active_requests_total gauge
+nodejs_active_requests_total 0
+
+# HELP nodejs_heap_size_total_bytes Process heap size from Node.js in bytes.
+# TYPE nodejs_heap_size_total_bytes gauge
+nodejs_heap_size_total_bytes 23101440
+
+# HELP nodejs_heap_size_used_bytes Process heap size used from Node.js in bytes.
+# TYPE nodejs_heap_size_used_bytes gauge
+nodejs_heap_size_used_bytes 20973296
+
+# HELP nodejs_external_memory_bytes Node.js external memory size in bytes.
+# TYPE nodejs_external_memory_bytes gauge
+nodejs_external_memory_bytes 19618341
+
+# HELP nodejs_heap_space_size_total_bytes Process heap space size total from Node.js in bytes.
+# TYPE nodejs_heap_space_size_total_bytes gauge
+nodejs_heap_space_size_total_bytes{space="read_only"} 0
+nodejs_heap_space_size_total_bytes{space="old"} 16666624
+nodejs_heap_space_size_total_bytes{space="code"} 1519616
+nodejs_heap_space_size_total_bytes{space="map"} 1056768
+nodejs_heap_space_size_total_bytes{space="large_object"} 2809856
+nodejs_heap_space_size_total_bytes{space="code_large_object"} 0
+nodejs_heap_space_size_total_bytes{space="new_large_object"} 0
+nodejs_heap_space_size_total_bytes{space="new"} 1048576
+
+# HELP nodejs_heap_space_size_used_bytes Process heap space size used from Node.js in bytes.
+# TYPE nodejs_heap_space_size_used_bytes gauge
+nodejs_heap_space_size_used_bytes{space="read_only"} 0
+nodejs_heap_space_size_used_bytes{space="old"} 15672080
+nodejs_heap_space_size_used_bytes{space="code"} 1390208
+nodejs_heap_space_size_used_bytes{space="map"} 835616
+nodejs_heap_space_size_used_bytes{space="large_object"} 2728352
+nodejs_heap_space_size_used_bytes{space="code_large_object"} 0
+nodejs_heap_space_size_used_bytes{space="new_large_object"} 0
+nodejs_heap_space_size_used_bytes{space="new"} 354992
+
+# HELP nodejs_heap_space_size_available_bytes Process heap space size available from Node.js in bytes.
+# TYPE nodejs_heap_space_size_available_bytes gauge
+nodejs_heap_space_size_available_bytes{space="read_only"} 0
+nodejs_heap_space_size_available_bytes{space="old"} 685288
+nodejs_heap_space_size_available_bytes{space="code"} 31104
+nodejs_heap_space_size_available_bytes{space="map"} 199152
+nodejs_heap_space_size_available_bytes{space="large_object"} 0
+nodejs_heap_space_size_available_bytes{space="code_large_object"} 0
+nodejs_heap_space_size_available_bytes{space="new_large_object"} 1030976
+nodejs_heap_space_size_available_bytes{space="new"} 675984
+
+# HELP nodejs_version_info Node.js version info.
+# TYPE nodejs_version_info gauge
+nodejs_version_info{version="v18.20.7",major="18",minor="20",patch="7"} 1
+
+# HELP nodejs_gc_duration_seconds Garbage collection duration by kind, one of major, minor, incremental or weakcb.
+# TYPE nodejs_gc_duration_seconds histogram
+nodejs_gc_duration_seconds_bucket{le="0.001",kind="incremental"} 4
+nodejs_gc_duration_seconds_bucket{le="0.01",kind="incremental"} 4
+nodejs_gc_duration_seconds_bucket{le="0.1",kind="incremental"} 4
+nodejs_gc_duration_seconds_bucket{le="1",kind="incremental"} 4
+nodejs_gc_duration_seconds_bucket{le="2",kind="incremental"} 4
+nodejs_gc_duration_seconds_bucket{le="5",kind="incremental"} 4
+nodejs_gc_duration_seconds_bucket{le="+Inf",kind="incremental"} 4
+nodejs_gc_duration_seconds_sum{kind="incremental"} 0.0011219530031085015
+nodejs_gc_duration_seconds_count{kind="incremental"} 4
+nodejs_gc_duration_seconds_bucket{le="0.001",kind="major"} 0
+nodejs_gc_duration_seconds_bucket{le="0.01",kind="major"} 2
+nodejs_gc_duration_seconds_bucket{le="0.1",kind="major"} 2
+nodejs_gc_duration_seconds_bucket{le="1",kind="major"} 2
+nodejs_gc_duration_seconds_bucket{le="2",kind="major"} 2
+nodejs_gc_duration_seconds_bucket{le="5",kind="major"} 2
+nodejs_gc_duration_seconds_bucket{le="+Inf",kind="major"} 2
+nodejs_gc_duration_seconds_sum{kind="major"} 0.00652207300066948
+nodejs_gc_duration_seconds_count{kind="major"} 2
+nodejs_gc_duration_seconds_bucket{le="0.001",kind="minor"} 1
+nodejs_gc_duration_seconds_bucket{le="0.01",kind="minor"} 3
+nodejs_gc_duration_seconds_bucket{le="0.1",kind="minor"} 3
+nodejs_gc_duration_seconds_bucket{le="1",kind="minor"} 3
+nodejs_gc_duration_seconds_bucket{le="2",kind="minor"} 3
+nodejs_gc_duration_seconds_bucket{le="5",kind="minor"} 3
+nodejs_gc_duration_seconds_bucket{le="+Inf",kind="minor"} 3
+nodejs_gc_duration_seconds_sum{kind="minor"} 0.003152975998818874
+nodejs_gc_duration_seconds_count{kind="minor"} 3
+sergio@Sergio:~$ sudo nano prometheus.yml
+sergio@Sergio:~$ sudo systemctl restart prometheus
+sergio@Sergio:~$ sudo nano prometheus.yml
+sergio@Sergio:~$ netstat -tuln | grep 4000
+Command 'netstat' not found, but can be installed with:
+sudo apt install net-tools
+sergio@Sergio:~$ journalctl -u prometheus.service -f
+Mar 08 16:53:54 Sergio prometheus[125174]: ts=2025-03-08T22:53:54.450Z caller=head.go:592 level=info component=tsdb msg="WAL segment loaded" segment=33 maxSegment=36
+Mar 08 16:53:54 Sergio prometheus[125174]: ts=2025-03-08T22:53:54.450Z caller=head.go:592 level=info component=tsdb msg="WAL segment loaded" segment=34 maxSegment=36
+Mar 08 16:53:54 Sergio prometheus[125174]: ts=2025-03-08T22:53:54.451Z caller=head.go:592 level=info component=tsdb msg="WAL segment loaded" segment=35 maxSegment=36
+Mar 08 16:53:54 Sergio prometheus[125174]: ts=2025-03-08T22:53:54.451Z caller=head.go:592 level=info component=tsdb msg="WAL segment loaded" segment=36 maxSegment=36
+Mar 08 16:53:54 Sergio prometheus[125174]: ts=2025-03-08T22:53:54.451Z caller=head.go:598 level=info component=tsdb msg="WAL replay completed" checkpoint_replay_duration=6.844023ms wal_replay_duration=7.825345ms total_replay_duration=14.701839ms
+Mar 08 16:53:54 Sergio prometheus[125174]: ts=2025-03-08T22:53:54.454Z caller=main.go:850 level=info fs_type=EXT4_SUPER_MAGIC
+Mar 08 16:53:54 Sergio prometheus[125174]: ts=2025-03-08T22:53:54.454Z caller=main.go:853 level=info msg="TSDB started"
+Mar 08 16:53:54 Sergio prometheus[125174]: ts=2025-03-08T22:53:54.454Z caller=main.go:980 level=info msg="Loading configuration file" filename=/etc/prometheus/prometheus.yml
+Mar 08 16:53:54 Sergio prometheus[125174]: ts=2025-03-08T22:53:54.454Z caller=main.go:1017 level=info msg="Completed loading of configuration file" filename=/etc/prometheus/prometheus.yml totalDuration=418.752µs db_storage=749ns remote_storage=1.213µs web_handler=759ns query_engine=738ns scrape=179.777µs scrape_sd=30.048µs notify=27.529µs notify_sd=6.495µs rules=1.211µs
+Mar 08 16:53:54 Sergio prometheus[125174]: ts=2025-03-08T22:53:54.454Z caller=main.go:795 level=info msg="Server is ready to receive web requests."
+
+^C
+sergio@Sergio:~$ curl http://localhost:4000/metrics
+# HELP http_request_duration_seconds duration histogram of http responses labeled with: status_code, method, path
+# TYPE http_request_duration_seconds histogram
+http_request_duration_seconds_bucket{le="0.003",status_code="404",method="GET",path="/api/transfer"} 0
+http_request_duration_seconds_bucket{le="0.03",status_code="404",method="GET",path="/api/transfer"} 1
+http_request_duration_seconds_bucket{le="0.1",status_code="404",method="GET",path="/api/transfer"} 1
+http_request_duration_seconds_bucket{le="0.3",status_code="404",method="GET",path="/api/transfer"} 1
+http_request_duration_seconds_bucket{le="1.5",status_code="404",method="GET",path="/api/transfer"} 1
+http_request_duration_seconds_bucket{le="10",status_code="404",method="GET",path="/api/transfer"} 1
+http_request_duration_seconds_bucket{le="+Inf",status_code="404",method="GET",path="/api/transfer"} 1
+http_request_duration_seconds_sum{status_code="404",method="GET",path="/api/transfer"} 0.01246183
+http_request_duration_seconds_count{status_code="404",method="GET",path="/api/transfer"} 1
+http_request_duration_seconds_bucket{le="0.003",status_code="400",method="POST",path="/api/transfer"} 0
+http_request_duration_seconds_bucket{le="0.03",status_code="400",method="POST",path="/api/transfer"} 1
+http_request_duration_seconds_bucket{le="0.1",status_code="400",method="POST",path="/api/transfer"} 1
+http_request_duration_seconds_bucket{le="0.3",status_code="400",method="POST",path="/api/transfer"} 1
+http_request_duration_seconds_bucket{le="1.5",status_code="400",method="POST",path="/api/transfer"} 1
+http_request_duration_seconds_bucket{le="10",status_code="400",method="POST",path="/api/transfer"} 1
+http_request_duration_seconds_bucket{le="+Inf",status_code="400",method="POST",path="/api/transfer"} 1
+http_request_duration_seconds_sum{status_code="400",method="POST",path="/api/transfer"} 0.015536105
+http_request_duration_seconds_count{status_code="400",method="POST",path="/api/transfer"} 1
+
+# HELP up 1 = up, 0 = not up
+# TYPE up gauge
+up 1
+
+# HELP process_cpu_user_seconds_total Total user CPU time spent in seconds.
+# TYPE process_cpu_user_seconds_total counter
+process_cpu_user_seconds_total 2.08235
+
+# HELP process_cpu_system_seconds_total Total system CPU time spent in seconds.
+# TYPE process_cpu_system_seconds_total counter
+process_cpu_system_seconds_total 0.5143139999999999
+
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 2.596664
+
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1741474117
+
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 76488704
+
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 895950848
+
+# HELP process_heap_bytes Process heap size in bytes.
+# TYPE process_heap_bytes gauge
+process_heap_bytes 132911104
+
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 26
+
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 1048576
+
+# HELP nodejs_eventloop_lag_seconds Lag of event loop in seconds.
+# TYPE nodejs_eventloop_lag_seconds gauge
+nodejs_eventloop_lag_seconds 0.003313325
+
+# HELP nodejs_eventloop_lag_min_seconds The minimum recorded event loop delay.
+# TYPE nodejs_eventloop_lag_min_seconds gauge
+nodejs_eventloop_lag_min_seconds 0.009027584
+
+# HELP nodejs_eventloop_lag_max_seconds The maximum recorded event loop delay.
+# TYPE nodejs_eventloop_lag_max_seconds gauge
+nodejs_eventloop_lag_max_seconds 0.012886015
+
+# HELP nodejs_eventloop_lag_mean_seconds The mean of the recorded event loop delays.
+# TYPE nodejs_eventloop_lag_mean_seconds gauge
+nodejs_eventloop_lag_mean_seconds 0.010137303679132223
+
+# HELP nodejs_eventloop_lag_stddev_seconds The standard deviation of the recorded event loop delays.
+# TYPE nodejs_eventloop_lag_stddev_seconds gauge
+nodejs_eventloop_lag_stddev_seconds 0.00010651022231101779
+
+# HELP nodejs_eventloop_lag_p50_seconds The 50th percentile of the recorded event loop delays.
+# TYPE nodejs_eventloop_lag_p50_seconds gauge
+nodejs_eventloop_lag_p50_seconds 0.010133503
+
+# HELP nodejs_eventloop_lag_p90_seconds The 90th percentile of the recorded event loop delays.
+# TYPE nodejs_eventloop_lag_p90_seconds gauge
+nodejs_eventloop_lag_p90_seconds 0.010223615
+
+# HELP nodejs_eventloop_lag_p99_seconds The 99th percentile of the recorded event loop delays.
+# TYPE nodejs_eventloop_lag_p99_seconds gauge
+nodejs_eventloop_lag_p99_seconds 0.010330111
+
+# HELP nodejs_active_resources Number of active resources that are currently keeping the event loop alive, grouped by async resource type.
+# TYPE nodejs_active_resources gauge
+nodejs_active_resources{type="TTYWrap"} 3
+nodejs_active_resources{type="TCPSocketWrap"} 4
+nodejs_active_resources{type="TCPServerWrap"} 1
+nodejs_active_resources{type="Timeout"} 1
+nodejs_active_resources{type="Immediate"} 1
+
+# HELP nodejs_active_resources_total Total number of active resources.
+# TYPE nodejs_active_resources_total gauge
+nodejs_active_resources_total 10
+
+# HELP nodejs_active_handles Number of active libuv handles grouped by handle type. Every handle type is C++ class name.
+# TYPE nodejs_active_handles gauge
+nodejs_active_handles{type="WriteStream"} 2
+nodejs_active_handles{type="ReadStream"} 1
+nodejs_active_handles{type="Socket"} 4
+nodejs_active_handles{type="Server"} 1
+
+# HELP nodejs_active_handles_total Total number of active handles.
+# TYPE nodejs_active_handles_total gauge
+nodejs_active_handles_total 8
+
+# HELP nodejs_active_requests Number of active libuv requests grouped by request type. Every request type is C++ class name.
+# TYPE nodejs_active_requests gauge
+
+# HELP nodejs_active_requests_total Total number of active requests.
+# TYPE nodejs_active_requests_total gauge
+nodejs_active_requests_total 0
+
+# HELP nodejs_heap_size_total_bytes Process heap size from Node.js in bytes.
+# TYPE nodejs_heap_size_total_bytes gauge
+nodejs_heap_size_total_bytes 23101440
+
+# HELP nodejs_heap_size_used_bytes Process heap size used from Node.js in bytes.
+# TYPE nodejs_heap_size_used_bytes gauge
+nodejs_heap_size_used_bytes 21154336
+
+# HELP nodejs_external_memory_bytes Node.js external memory size in bytes.
+# TYPE nodejs_external_memory_bytes gauge
+nodejs_external_memory_bytes 19627825
+
+# HELP nodejs_heap_space_size_total_bytes Process heap space size total from Node.js in bytes.
+# TYPE nodejs_heap_space_size_total_bytes gauge
+nodejs_heap_space_size_total_bytes{space="read_only"} 0
+nodejs_heap_space_size_total_bytes{space="old"} 16666624
+nodejs_heap_space_size_total_bytes{space="code"} 1519616
+nodejs_heap_space_size_total_bytes{space="map"} 1056768
+nodejs_heap_space_size_total_bytes{space="large_object"} 2809856
+nodejs_heap_space_size_total_bytes{space="code_large_object"} 0
+nodejs_heap_space_size_total_bytes{space="new_large_object"} 0
+nodejs_heap_space_size_total_bytes{space="new"} 1048576
+
+# HELP nodejs_heap_space_size_used_bytes Process heap space size used from Node.js in bytes.
+# TYPE nodejs_heap_space_size_used_bytes gauge
+nodejs_heap_space_size_used_bytes{space="read_only"} 0
+nodejs_heap_space_size_used_bytes{space="old"} 15734584
+nodejs_heap_space_size_used_bytes{space="code"} 1390208
+nodejs_heap_space_size_used_bytes{space="map"} 835616
+nodejs_heap_space_size_used_bytes{space="large_object"} 2728352
+nodejs_heap_space_size_used_bytes{space="code_large_object"} 0
+nodejs_heap_space_size_used_bytes{space="new_large_object"} 0
+nodejs_heap_space_size_used_bytes{space="new"} 470688
+
+# HELP nodejs_heap_space_size_available_bytes Process heap space size available from Node.js in bytes.
+# TYPE nodejs_heap_space_size_available_bytes gauge
+nodejs_heap_space_size_available_bytes{space="read_only"} 0
+nodejs_heap_space_size_available_bytes{space="old"} 621464
+nodejs_heap_space_size_available_bytes{space="code"} 31104
+nodejs_heap_space_size_available_bytes{space="map"} 199152
+nodejs_heap_space_size_available_bytes{space="large_object"} 0
+nodejs_heap_space_size_available_bytes{space="code_large_object"} 0
+nodejs_heap_space_size_available_bytes{space="new_large_object"} 1030976
+nodejs_heap_space_size_available_bytes{space="new"} 560288
+
+# HELP nodejs_version_info Node.js version info.
+# TYPE nodejs_version_info gauge
+nodejs_version_info{version="v18.20.7",major="18",minor="20",patch="7"} 1
+
+# HELP nodejs_gc_duration_seconds Garbage collection duration by kind, one of major, minor, incremental or weakcb.
+# TYPE nodejs_gc_duration_seconds histogram
+nodejs_gc_duration_seconds_bucket{le="0.001",kind="incremental"} 4
+nodejs_gc_duration_seconds_bucket{le="0.01",kind="incremental"} 4
+nodejs_gc_duration_seconds_bucket{le="0.1",kind="incremental"} 4
+nodejs_gc_duration_seconds_bucket{le="1",kind="incremental"} 4
+nodejs_gc_duration_seconds_bucket{le="2",kind="incremental"} 4
+nodejs_gc_duration_seconds_bucket{le="5",kind="incremental"} 4
+nodejs_gc_duration_seconds_bucket{le="+Inf",kind="incremental"} 4
+nodejs_gc_duration_seconds_sum{kind="incremental"} 0.0011219530031085015
+nodejs_gc_duration_seconds_count{kind="incremental"} 4
+nodejs_gc_duration_seconds_bucket{le="0.001",kind="major"} 0
+nodejs_gc_duration_seconds_bucket{le="0.01",kind="major"} 2
+nodejs_gc_duration_seconds_bucket{le="0.1",kind="major"} 2
+nodejs_gc_duration_seconds_bucket{le="1",kind="major"} 2
+nodejs_gc_duration_seconds_bucket{le="2",kind="major"} 2
+nodejs_gc_duration_seconds_bucket{le="5",kind="major"} 2
+nodejs_gc_duration_seconds_bucket{le="+Inf",kind="major"} 2
+nodejs_gc_duration_seconds_sum{kind="major"} 0.00652207300066948
+nodejs_gc_duration_seconds_count{kind="major"} 2
+nodejs_gc_duration_seconds_bucket{le="0.001",kind="minor"} 3
+nodejs_gc_duration_seconds_bucket{le="0.01",kind="minor"} 6
+nodejs_gc_duration_seconds_bucket{le="0.1",kind="minor"} 6
+nodejs_gc_duration_seconds_bucket{le="1",kind="minor"} 6
+nodejs_gc_duration_seconds_bucket{le="2",kind="minor"} 6
+nodejs_gc_duration_seconds_bucket{le="5",kind="minor"} 6
+nodejs_gc_duration_seconds_bucket{le="+Inf",kind="minor"} 6
+nodejs_gc_duration_seconds_sum{kind="minor"} 0.005177165992558002
+nodejs_gc_duration_seconds_count{kind="minor"} 6
+sergio@Sergio:~$ npm install express mongoose body-parser express-prom-bundle prom-client
+
+up to date, audited 132 packages in 2s
+
+16 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+sergio@Sergio:~$ nano prometheus.yml
+sergio@Sergio:~$ nano prometheus.yml
+sergio@Sergio:~$ journalctl -u prometheus.service -f
+Mar 08 16:53:54 Sergio prometheus[125174]: ts=2025-03-08T22:53:54.454Z caller=main.go:1017 level=info msg="Completed loading of configuration file" filename=/etc/prometheus/prometheus.yml totalDuration=418.752µs db_storage=749ns remote_storage=1.213µs web_handler=759ns query_engine=738ns scrape=179.777µs scrape_sd=30.048µs notify=27.529µs notify_sd=6.495µs rules=1.211µs
+Mar 08 16:53:54 Sergio prometheus[125174]: ts=2025-03-08T22:53:54.454Z caller=main.go:795 level=info msg="Server is ready to receive web requests."
+Mar 08 17:00:00 Sergio prometheus[125174]: ts=2025-03-08T23:00:00.764Z caller=compact.go:518 level=info component=tsdb msg="write block" mint=1741464000000 maxt=1741471200000 ulid=01JNVZS930EWMJ3RS2FMREG82J duration=28.375575ms
+Mar 08 17:00:00 Sergio prometheus[125174]: ts=2025-03-08T23:00:00.766Z caller=head.go:805 level=info component=tsdb msg="Head GC completed" duration=873.977µs
+Mar 08 17:00:00 Sergio prometheus[125174]: ts=2025-03-08T23:00:00.766Z caller=checkpoint.go:97 level=info component=tsdb msg="Creating checkpoint" from_segment=30 to_segment=33 mint=1741471200000
+Mar 08 17:00:00 Sergio prometheus[125174]: ts=2025-03-08T23:00:00.780Z caller=head.go:974 level=info component=tsdb msg="WAL checkpoint complete" first=30 last=33 duration=14.164632ms
+Mar 08 17:00:00 Sergio prometheus[125174]: ts=2025-03-08T23:00:00.808Z caller=compact.go:459 level=info component=tsdb msg="compact blocks" count=3 mint=1741438815862 maxt=1741456800000 ulid=01JNVZS94DEG4Y25YJEZ0EJBX1 sources="[01JNV7RVRHRH2QK2VXW7A9KA8R 01JNVB6FRK54KQKV7654GTJTJG 01JNVP5E6GX1HX2RC7Q94255EH]" duration=27.234611ms
+Mar 08 17:00:00 Sergio prometheus[125174]: ts=2025-03-08T23:00:00.812Z caller=db.go:1293 level=info component=tsdb msg="Deleting obsolete block" block=01JNV7RVRHRH2QK2VXW7A9KA8R
+Mar 08 17:00:00 Sergio prometheus[125174]: ts=2025-03-08T23:00:00.818Z caller=db.go:1293 level=info component=tsdb msg="Deleting obsolete block" block=01JNVB6FRK54KQKV7654GTJTJG
+Mar 08 17:00:00 Sergio prometheus[125174]: ts=2025-03-08T23:00:00.821Z caller=db.go:1293 level=info component=tsdb msg="Deleting obsolete block" block=01JNVP5E6GX1HX2RC7Q94255EH
+^C
+sergio@Sergio:~$ sudo systemctl restart prometheus
+[sudo] password for sergio:
+sergio@Sergio:~$ scrape_interval: 10s  # o un valor más largo si es necesario
+scrape_interval:: command not found
+sergio@Sergio:~$ nano prometheus.yml
+sergio@Sergio:~$ nano prometheus.yml
+sergio@Sergio:~$ ls -l /etc/prometheus/prometheus.yml
+-rw-r--r-- 1 root root 411 Mar  8 11:59 /etc/prometheus/prometheus.yml
+sergio@Sergio:~$ sudo nano /etc/prometheus/prometheus.yml
+sergio@Sergio:~$ sudo systemctl restart prometheus
+sergio@Sergio:~$ sudo nano /etc/prometheus/prometheus.yml
+sergio@Sergio:~$ nano prometheus.yml
+sergio@Sergio:~$ sudo nano server.js
+[sudo] password for sergio:
+sergio@Sergio:~$ nano prometheus.yml
+sergio@Sergio:~$ mongos
+BadValue: error: no args for --configdb
+try 'mongos --help' for more information
+sergio@Sergio:~$ mongos
+BadValue: error: no args for --configdb
+try 'mongos --help' for more information
+sergio@Sergio:~$ mongos
+BadValue: error: no args for --configdb
+try 'mongos --help' for more information
+sergio@Sergio:~$ mongoos
+Command 'mongoos' not found, did you mean:
+  command 'mongoose' from deb mongoose (1:5.10.1+dfsg-4build1)
+Try: sudo apt install <deb name>
+sergio@Sergio:~$ mongoose
+Command 'mongoose' not found, but can be installed with:
+sudo apt install mongoose
+sergio@Sergio:~$ mongod
+{"t":{"$date":"2025-03-08T21:21:50.609-06:00"},"s":"I",  "c":"NETWORK",  "id":4915701, "ctx":"-","msg":"Initialized wire specification","attr":{"spec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":17},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":17},"outgoing":{"minWireVersion":6,"maxWireVersion":17},"isInternalClient":true}}}
+{"t":{"$date":"2025-03-08T21:21:50.610-06:00"},"s":"I",  "c":"CONTROL",  "id":23285,   "ctx":"main","msg":"Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
+{"t":{"$date":"2025-03-08T21:21:50.615-06:00"},"s":"I",  "c":"NETWORK",  "id":4648601, "ctx":"main","msg":"Implicit TCP FastOpen unavailable. If TCP FastOpen is required, set tcpFastOpenServer, tcpFastOpenClient, and tcpFastOpenQueueSize."}
+{"t":{"$date":"2025-03-08T21:21:50.621-06:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationDonorService","namespace":"config.tenantMigrationDonors"}}
+{"t":{"$date":"2025-03-08T21:21:50.621-06:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationRecipientService","namespace":"config.tenantMigrationRecipients"}}
+{"t":{"$date":"2025-03-08T21:21:50.621-06:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"ShardSplitDonorService","namespace":"config.tenantSplitDonors"}}
+{"t":{"$date":"2025-03-08T21:21:50.621-06:00"},"s":"I",  "c":"CONTROL",  "id":5945603, "ctx":"main","msg":"Multi threading initialized"}
+{"t":{"$date":"2025-03-08T21:21:50.622-06:00"},"s":"I",  "c":"CONTROL",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":177678,"port":27017,"dbPath":"/data/db","architecture":"64-bit","host":"Sergio"}}
+{"t":{"$date":"2025-03-08T21:21:50.622-06:00"},"s":"I",  "c":"CONTROL",  "id":23403,   "ctx":"initandlisten","msg":"Build Info","attr":{"buildInfo":{"version":"6.0.20","gitVersion":"ef4efd469fb0c5626c629c4f0f21398c9b5dd08f","openSSLVersion":"OpenSSL 3.0.2 15 Mar 2022","modules":[],"allocator":"tcmalloc","environment":{"distmod":"ubuntu2204","distarch":"x86_64","target_arch":"x86_64"}}}}
+{"t":{"$date":"2025-03-08T21:21:50.622-06:00"},"s":"I",  "c":"CONTROL",  "id":51765,   "ctx":"initandlisten","msg":"Operating System","attr":{"os":{"name":"Ubuntu","version":"22.04"}}}
+{"t":{"$date":"2025-03-08T21:21:50.623-06:00"},"s":"I",  "c":"CONTROL",  "id":21951,   "ctx":"initandlisten","msg":"Options set by command line","attr":{"options":{}}}
+{"t":{"$date":"2025-03-08T21:21:50.624-06:00"},"s":"E",  "c":"NETWORK",  "id":23024,   "ctx":"initandlisten","msg":"Failed to unlink socket file","attr":{"path":"/tmp/mongodb-27017.sock","error":"Operation not permitted"}}
+{"t":{"$date":"2025-03-08T21:21:50.624-06:00"},"s":"F",  "c":"ASSERT",   "id":23091,   "ctx":"initandlisten","msg":"Fatal assertion","attr":{"msgid":40486,"file":"src/mongo/transport/transport_layer_asio.cpp","line":1130}}
+{"t":{"$date":"2025-03-08T21:21:50.624-06:00"},"s":"F",  "c":"ASSERT",   "id":23092,   "ctx":"initandlisten","msg":"\n\n***aborting after fassert() failure\n\n"}
+sergio@Sergio:~$ mongoose
+Command 'mongoose' not found, but can be installed with:
+sudo apt install mongoose
+sergio@Sergio:~$ sudo systemctl status mongod
+[sudo] password for sergio:
+● mongod.service - MongoDB Database Server
+     Loaded: loaded (/lib/systemd/system/mongod.service; enabled; ven>
+     Active: active (running) since Sat 2025-03-08 12:29:44 CST; 8h a>
+       Docs: https://docs.mongodb.org/manual
+   Main PID: 87478 (mongod)
+     Memory: 111.0M
+     CGroup: /system.slice/mongod.service
+             └─87478 /usr/bin/mongod --config /etc/mongod.conf
+
+Mar 08 12:29:44 Sergio systemd[1]: Started MongoDB Database Server.
+Mar 08 12:29:44 Sergio mongod[87478]: {"t":{"$date":"2025-03-08T18:29>
+lines 1-11/11 (END)
+sergio@Sergio:~$ which mongo
+sergio@Sergio:~$ mongosh
+Current Mongosh Log ID: 67cd09dfd653ff76f66b140a
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.4.2
+Using MongoDB:          6.0.20
+Using Mongosh:          2.4.2
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2025-03-08T12:29:44.350-06:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2025-03-08T12:29:44.506-06:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+   2025-03-08T12:29:44.506-06:00: /sys/kernel/mm/transparent_hugepage/enabled is 'always'. We suggest setting it to 'never' in this binary version
+   2025-03-08T12:29:44.506-06:00: vm.max_map_count is too low
+------
+
+test> use transferDB
+switched to db transferDB
+transferDB> db.transfers.fin()
+TypeError: db.transfers.fin is not a function
+transferDB> db.transfers.find() use transferDB
+Uncaught:
+SyntaxError: Missing semicolon. (1:19)
+
+> 1 | db.transfers.find() use transferDB
+    |                    ^
+  2 |
+
+transferDB> db.transfers.find()
+[
