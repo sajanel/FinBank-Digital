@@ -72,7 +72,7 @@
 
 ### IV.2.3. Evaluación de normativas bancarias y reportería financiera
 - Validación del cumplimiento regulatorio con **iAuditor **.
-
+![image](https://images.app.goo.gl/DrfTQMBhNq3fkLia6)
 ### IV.2.4. Auditoría de políticas anti-lavado de dinero
 - Revisión de controles y detección de transacciones sospechosas.
 
