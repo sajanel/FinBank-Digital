@@ -1,1 +1,27 @@
 
+# 🏦 Evaluación de Cumplimiento PCI DSS y Pruebas de Políticas ALD - FinBank Digital  
+
+Este repositorio contiene documentación utilizada en pruebas y evaluaciones relacionadas con **PCI DSS** y normativas de **prevención de lavado de dinero (ALD)** en FinBank Digital.  
+
+## 📄 Documentación  
+
+- **CUMPLIMIENTO PCI DSS FinBank-Digital.pdf**  
+  Documento con el análisis y pruebas realizadas sobre el cumplimiento de PCI DSS en FinBank Digital, incluyendo validaciones y mejores prácticas.  
+
+- **PCI-DSS-v4_0-LA.pdf**  
+  Documento oficial con los requisitos de la versión 4.0 de **PCI DSS** en español.  
+
+- **Politicas_Anti_lavado_de_dinero_Decreto_67-2001.pdf**  
+  Regulaciones establecidas en el **Decreto 67-2001**, enfocadas en la prevención del lavado de dinero y financiamiento ilícito.  
+
+## 🎯 Objetivos  
+
+- Realizar pruebas sobre el cumplimiento de **PCI DSS v4.0** en FinBank Digital.  
+- Evaluar los controles de seguridad aplicados en la infraestructura financiera.  
+- Revisar normativas de **prevención de lavado de dinero** y su aplicación en entornos bancarios.  
+
+## 🛠️ Uso  
+
+1. Clona este repositorio:  
+   ```bash
+   git clone https://github.com/tu_usuario/tu_repositorio.git
