@@ -1,0 +1,11 @@
+sergio@Sergio:~$ journalctl -u prometheus.service -f
+Mar 08 16:53:54 Sergio prometheus[125174]: ts=2025-03-08T22:53:54.454Z caller=main.go:1017 level=info msg="Completed loading of configuration file" filename=/etc/prometheus/prometheus.yml totalDuration=418.752µs db_storage=749ns remote_storage=1.213µs web_handler=759ns query_engine=738ns scrape=179.777µs scrape_sd=30.048µs notify=27.529µs notify_sd=6.495µs rules=1.211µs
+Mar 08 16:53:54 Sergio prometheus[125174]: ts=2025-03-08T22:53:54.454Z caller=main.go:795 level=info msg="Server is ready to receive web requests."
+Mar 08 17:00:00 Sergio prometheus[125174]: ts=2025-03-08T23:00:00.764Z caller=compact.go:518 level=info component=tsdb msg="write block" mint=1741464000000 maxt=1741471200000 ulid=01JNVZS930EWMJ3RS2FMREG82J duration=28.375575ms
+Mar 08 17:00:00 Sergio prometheus[125174]: ts=2025-03-08T23:00:00.766Z caller=head.go:805 level=info component=tsdb msg="Head GC completed" duration=873.977µs
+Mar 08 17:00:00 Sergio prometheus[125174]: ts=2025-03-08T23:00:00.766Z caller=checkpoint.go:97 level=info component=tsdb msg="Creating checkpoint" from_segment=30 to_segment=33 mint=1741471200000
+Mar 08 17:00:00 Sergio prometheus[125174]: ts=2025-03-08T23:00:00.780Z caller=head.go:974 level=info component=tsdb msg="WAL checkpoint complete" first=30 last=33 duration=14.164632ms
+Mar 08 17:00:00 Sergio prometheus[125174]: ts=2025-03-08T23:00:00.808Z caller=compact.go:459 level=info component=tsdb msg="compact blocks" count=3 mint=1741438815862 maxt=1741456800000 ulid=01JNVZS94DEG4Y25YJEZ0EJBX1 sources="[01JNV7RVRHRH2QK2VXW7A9KA8R 01JNVB6FRK54KQKV7654GTJTJG 01JNVP5E6GX1HX2RC7Q94255EH]" duration=27.234611ms
+Mar 08 17:00:00 Sergio prometheus[125174]: ts=2025-03-08T23:00:00.812Z caller=db.go:1293 level=info component=tsdb msg="Deleting obsolete block" block=01JNV7RVRHRH2QK2VXW7A9KA8R
+Mar 08 17:00:00 Sergio prometheus[125174]: ts=2025-03-08T23:00:00.818Z caller=db.go:1293 level=info component=tsdb msg="Deleting obsolete block" block=01JNVB6FRK54KQKV7654GTJTJG
+Mar 08 17:00:00 Sergio prometheus[125174]: ts=2025-03-08T23:00:00.821Z caller=db.go:1293 level=info component=tsdb msg="Deleting obsolete block" block=01JNVP5E6GX1HX2RC7Q94255EH
