@@ -5,19 +5,20 @@
 - Se utilizarán herramientas como **Nessus** para identificar vulnerabilidades en servidores críticos.
 - Se generarán reportes detallados de vulnerabilidades encontradas y posibles mitigaciones.
 
-- ![image](https://github.com/user-attachments/assets/0cf54a00-3f77-4239-a6cb-a555cbd41ca0)
+  ![image](https://github.com/user-attachments/assets/0cf54a00-3f77-4239-a6cb-a555cbd41ca0)
 
 
 ### III.2. Análisis de tráfico de red (Wireshark)
 - Captura y análisis de paquetes de red para detectar posibles amenazas o anomalías.
 - Identificación de patrones de tráfico sospechoso y posibles intentos de intrusión.
+  
 ![image](https://github.com/user-attachments/assets/4584435a-0b17-4c8b-be22-3a3c599b993a)
 
-- 
-
-### III.3. Seguridad perimetral en Azure
+### III.3. Seguridad perimetral en Azure (Simulado de nube con GNS3)
 - Revisión de configuración y acceso en la infraestructura de **Azure**.
 - Implementación de buenas prácticas en la gestión de firewall y reglas de acceso.
+
+![image](https://github.com/user-attachments/assets/48a2f463-f3bc-4fad-9691-449cffadf86a)
 
 ---
 
@@ -32,22 +33,29 @@
   - Verificar que el **proxy** está activo en la interfaz `127.0.0.1` y el puerto `8080`.
   - Iniciar el modo de **intercepción de tráfico**.
 
+    ![image](https://github.com/user-attachments/assets/8ad44a07-cd6d-44ad-a3fa-ef2caccccb23)
+
+
 #### Pruebas con API de Seguridad:
 - Se utilizará la API vulnerable de prueba desde GitHub:
   - [DVWS-Node](https://github.com/snoopysecurity/dvws-node)
 - Se realizarán pruebas de seguridad enfocadas en entornos financieros.
 
+  ![image](https://github.com/user-attachments/assets/e67b8ee4-3434-4f35-b8c9-02e2a39cb608)
+
+
 ### IV.1.0. Inyección SQL en SQL Server y MongoDB (SQLMap/Postman SQLScan)
 - Uso de **SQLMap** y **Postman SQLScan** para detectar vulnerabilidades de inyección SQL.
 - Pruebas dirigidas a bases de datos **SQL Server** y **MongoDB**.
 
-### IV.1.1. Evaluación de autenticación multifactor (iAuditor)
-- Revisión de la implementación de **MFA** en accesos a sistemas críticos.
-- Validación de políticas de autenticación en **iAuditor**.
+![image](https://github.com/user-attachments/assets/c78e8d21-3440-4318-bb30-d148cee785f1)
+
 
 ### IV.1.2. Evaluación del procesamiento de pagos en tiempo real
 - Pruebas en sistemas transaccionales para detectar fraudes.
 - Simulación de pagos en entornos de prueba.
+
+![image](https://github.com/user-attachments/assets/6b16dd02-9c4c-4edd-9b30-fb179187ef05)
 
 ---
 
