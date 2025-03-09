@@ -5,9 +5,15 @@
 - Se utilizarán herramientas como **Nessus** para identificar vulnerabilidades en servidores críticos.
 - Se generarán reportes detallados de vulnerabilidades encontradas y posibles mitigaciones.
 
+- ![image](https://github.com/user-attachments/assets/0cf54a00-3f77-4239-a6cb-a555cbd41ca0)
+
+
 ### III.2. Análisis de tráfico de red (Wireshark)
 - Captura y análisis de paquetes de red para detectar posibles amenazas o anomalías.
 - Identificación de patrones de tráfico sospechoso y posibles intentos de intrusión.
+![image](https://github.com/user-attachments/assets/4584435a-0b17-4c8b-be22-3a3c599b993a)
+
+- 
 
 ### III.3. Seguridad perimetral en Azure
 - Revisión de configuración y acceso en la infraestructura de **Azure**.
