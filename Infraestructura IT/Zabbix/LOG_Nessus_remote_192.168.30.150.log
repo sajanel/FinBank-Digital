@@ -1,0 +1,18 @@
+Mar  7 00:02:56 bollers su[1743]: (to tecnico1) root on tty1
+Mar  7 00:03:02 bollers systemd-logind[493]: Session 9 logged out. Waiting for processes to exit.
+Mar  7 00:03:02 bollers systemd-logind[493]: Removed session 9.
+Mar  7 00:03:09 bollers systemd-logind[493]: New session 11 of user root.
+Mar  7 00:04:36 bollers systemd-logind[493]: Session 11 logged out. Waiting for processes to exit.
+Mar  7 00:04:36 bollers systemd-logind[493]: Removed session 11.
+Mar  7 00:05:53 bollers systemd-logind[493]: New session 12 of user tecnico1.
+Mar  7 00:05:59 bollers su[1778]: FAILED SU (to root) tecnico1 on tty1
+Mar  7 00:49:03 bollers su[1906]: FAILED SU (to root) tecnico1 on tty1
+Mar  7 00:49:11 bollers su[1907]: FAILED SU (to root) tecnico1 on tty1
+Mar  7 00:55:22 bollers su[1911]: FAILED SU (to root) tecnico1 on tty1
+Mar  7 00:55:29 bollers su[1912]: FAILED SU (to root) tecnico1 on tty1
+Mar  7 01:07:37 bollers su[1920]: FAILED SU (to root) tecnico1 on tty1
+Mar  7 01:10:59 bollers su[1976]: FAILED SU (to tecnico1) tecnico1 on tty1
+Mar  7 01:11:09 bollers su[1977]: FAILED SU (to root) tecnico1 on tty1
+Mar  7 01:30:05 Zabbix-Server sshd[14824]: Failed password for tecnico1 from 192.168.4.250 port 54372 ssh2
+Mar  7 01:30:13 Zabbix-Server sshd[14824]: Failed password for tecnico1 from 192.168.4.250 port 54372 ssh2
+Mar  7 01:30:47 Zabbix-Server sshd[14857]: Failed password for zbx_monitor from ::1 port 54442 ssh2

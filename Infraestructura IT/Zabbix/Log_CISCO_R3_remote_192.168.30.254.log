@@ -1,0 +1,80 @@
+Mar  6 23:35:57 192.168.4.254 112: *Mar  7 05:35:56.271: %SYS-6-LOGGINGHOST_STARTSTOP: Logging to host 192.168.4.250 port 514 started - CLI initiated
+Mar  6 23:36:59 192.168.4.254 113: *Mar  7 05:36:53.534: %SYS-5-CONFIG_I: Configured from console by ecarrerag on vty0 (192.168.4.254)
+Mar  6 23:37:00 192.168.4.254 114: *Mar  7 05:36:59.786: %SYS-6-LOGGINGHOST_STARTSTOP: Logging to host 192.168.4.250 port 514 started - reconnection
+Mar  6 23:38:12 192.168.4.254 115: *Mar  7 05:38:11.847: %SSH-3-NO_MATCH: No matching kex algorithm found: client curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,ext-info-c,kex-strict-c-v00@openssh.com server diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+Mar  6 23:44:44 192.168.4.254 116: *Mar  7 05:44:43.068: %SYS-5-CONFIG_I: Configured from console by ecarrerag on vty1 (192.168.4.254)
+Mar  6 23:45:32 192.168.4.254 117: *Mar  7 05:45:31.354: %SYS-5-CONFIG_I: Configured from console by ecarrerag on vty1 (192.168.4.254)
+Mar  6 23:46:03 192.168.4.254 118: *Mar  7 05:46:02.071: %SSH-3-NO_MATCH: No matching kex algorithm found: client curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,ext-info-c,kex-strict-c-v00@openssh.com server diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+Mar  6 23:47:46 192.168.4.254 41: Compiled Thu 08-Oct-15 21:21 by prod_rel_team
+Mar  6 23:47:46 192.168.4.254 42: *Mar  7 05:47:46.630: %SSH-5-ENABLED: SSH 2.0 has been enabled
+Mar  6 23:47:47 192.168.4.254 43: *Mar  7 05:47:46.637: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+Mar  6 23:47:47 192.168.4.254 44: *Mar  7 05:47:46.637: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+Mar  6 23:47:47 192.168.4.254 45: *Mar  7 05:47:46.667: %SYS-6-LOGGINGHOST_STARTSTOP: Logging to host 192.168.4.250 port 514 started - CLI initiated
+Mar  6 23:47:47 192.168.4.254 46: *Mar  7 05:47:47.125: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet0/0, changed state to up
+Mar  6 23:47:47 192.168.4.254 47: *Mar  7 05:47:47.125: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet0/1, changed state to down
+Mar  6 23:47:47 192.168.4.254 48: *Mar  7 05:47:47.125: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet0/2, changed state to down
+Mar  6 23:47:47 192.168.4.254 49: *Mar  7 05:47:47.125: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet0/3, changed state to down
+Mar  6 23:47:47 192.168.4.254 50: *Mar  7 05:47:47.125: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1/0, changed state to down
+Mar  6 23:47:47 192.168.4.254 51: *Mar  7 05:47:47.125: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1/1, changed state to down
+Mar  6 23:47:47 192.168.4.254 52: *Mar  7 05:47:47.125: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1/2, changed state to down
+Mar  6 23:47:47 192.168.4.254 53: *Mar  7 05:47:47.125: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1/3, changed state to down
+Mar  6 23:47:47 192.168.4.254 54: *Mar  7 05:47:47.125: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet2/0, changed state to down
+Mar  6 23:47:47 192.168.4.254 55: *Mar  7 05:47:47.125: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet2/1, changed state to down
+Mar  6 23:47:47 192.168.4.254 56: *Mar  7 05:47:47.125: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet2/2, changed state to down
+Mar  6 23:47:47 192.168.4.254 57: *Mar  7 05:47:47.125: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet2/3, changed state to down
+Mar  6 23:47:47 192.168.4.254 58: *Mar  7 05:47:47.125: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet3/0, changed state to down
+Mar  6 23:47:47 192.168.4.254 59: *Mar  7 05:47:47.125: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet3/1, changed state to down
+Mar  6 23:47:47 192.168.4.254 60: *Mar  7 05:47:47.125: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet3/2, changed state to down
+Mar  6 23:47:47 192.168.4.254 61: *Mar  7 05:47:47.125: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet3/3, changed state to down
+Mar  6 23:47:47 192.168.4.254 62: *Mar  7 05:47:47.125: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet4/0, changed state to down
+Mar  6 23:47:47 192.168.4.254 63: *Mar  7 05:47:47.125: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet4/1, changed state to down
+Mar  6 23:47:47 192.168.4.254 64: *Mar  7 05:47:47.125: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet4/2, changed state to down
+Mar  6 23:47:47 192.168.4.254 65: *Mar  7 05:47:47.130: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet4/3, changed state to down
+Mar  6 23:47:47 192.168.4.254 66: *Mar  7 05:47:47.282: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet5/0, changed state to down
+Mar  6 23:47:47 192.168.4.254 67: *Mar  7 05:47:47.282: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet5/1, changed state to down
+Mar  6 23:47:47 192.168.4.254 68: *Mar  7 05:47:47.282: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet5/2, changed state to down
+Mar  6 23:47:47 192.168.4.254 69: *Mar  7 05:47:47.287: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet5/3, changed state to down
+Mar  6 23:47:47 192.168.4.254 70: *Mar  7 05:47:47.287: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet6/0, changed state to down
+Mar  6 23:47:47 192.168.4.254 71: *Mar  7 05:47:47.287: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet6/1, changed state to down
+Mar  6 23:47:47 192.168.4.254 72: *Mar  7 05:47:47.287: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet6/2, changed state to down
+Mar  6 23:47:47 192.168.4.254 73: *Mar  7 05:47:47.287: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet6/3, changed state to down
+Mar  6 23:47:48 192.168.4.254 74: *Mar  7 05:47:47.287: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet7/0, changed state to down
+Mar  6 23:47:48 192.168.4.254 75: *Mar  7 05:47:47.287: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet7/1, changed state to down
+Mar  6 23:47:48 192.168.4.254 76: *Mar  7 05:47:47.296: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet7/2, changed state to down
+Mar  6 23:47:48 192.168.4.254 77: *Mar  7 05:47:47.392: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet7/3, changed state to down
+Mar  6 23:47:48 192.168.4.254 78: *Mar  7 05:47:48.329: %LINK-5-CHANGED: Interface Ethernet0/1, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 79: *Mar  7 05:47:48.329: %LINK-5-CHANGED: Interface Ethernet0/2, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 80: *Mar  7 05:47:48.342: %LINK-5-CHANGED: Interface Ethernet0/3, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 81: *Mar  7 05:47:48.357: %LINK-5-CHANGED: Interface Ethernet1/0, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 82: *Mar  7 05:47:48.366: %LINK-5-CHANGED: Interface Ethernet1/1, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 83: *Mar  7 05:47:48.377: %LINK-5-CHANGED: Interface Ethernet1/2, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 84: *Mar  7 05:47:48.377: %LINK-5-CHANGED: Interface Ethernet1/3, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 85: *Mar  7 05:47:48.391: %LINK-5-CHANGED: Interface Ethernet2/0, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 86: *Mar  7 05:47:48.405: %LINK-5-CHANGED: Interface Ethernet2/1, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 87: *Mar  7 05:47:48.405: %LINK-5-CHANGED: Interface Ethernet2/2, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 88: *Mar  7 05:47:48.420: %LINK-5-CHANGED: Interface Ethernet2/3, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 89: *Mar  7 05:47:48.431: %LINK-5-CHANGED: Interface Ethernet3/0, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 90: *Mar  7 05:47:48.431: %LINK-5-CHANGED: Interface Ethernet3/1, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 91: *Mar  7 05:47:48.442: %LINK-5-CHANGED: Interface Ethernet3/2, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 92: *Mar  7 05:47:48.452: %LINK-5-CHANGED: Interface Ethernet3/3, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 93: *Mar  7 05:47:48.462: %LINK-5-CHANGED: Interface Ethernet4/0, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 94: *Mar  7 05:47:48.462: %LINK-5-CHANGED: Interface Ethernet4/1, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 95: *Mar  7 05:47:48.478: %LINK-5-CHANGED: Interface Ethernet4/2, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 96: *Mar  7 05:47:48.478: %LINK-5-CHANGED: Interface Ethernet4/3, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 97: *Mar  7 05:47:48.492: %LINK-5-CHANGED: Interface Ethernet5/0, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 98: *Mar  7 05:47:48.502: %LINK-5-CHANGED: Interface Ethernet5/1, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 99: *Mar  7 05:47:48.502: %LINK-5-CHANGED: Interface Ethernet5/2, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 100: *Mar  7 05:47:48.512: %LINK-5-CHANGED: Interface Ethernet5/3, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 101: *Mar  7 05:47:48.523: %LINK-5-CHANGED: Interface Ethernet6/0, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 102: *Mar  7 05:47:48.534: %LINK-5-CHANGED: Interface Ethernet6/1, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 103: *Mar  7 05:47:48.544: %LINK-5-CHANGED: Interface Ethernet6/2, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 104: *Mar  7 05:47:48.553: %LINK-5-CHANGED: Interface Ethernet6/3, changed state to administratively down
+Mar  6 23:47:48 192.168.4.254 105: *Mar  7 05:47:48.553: %LINK-5-CHANGED: Interface Ethernet7/0, changed state to administratively down
+Mar  6 23:47:49 192.168.4.254 106: *Mar  7 05:47:48.567: %LINK-5-CHANGED: Interface Ethernet7/1, changed state to administratively down
+Mar  6 23:47:49 192.168.4.254 107: *Mar  7 05:47:48.567: %LINK-5-CHANGED: Interface Ethernet7/2, changed state to administratively down
+Mar  6 23:47:49 192.168.4.254 108: *Mar  7 05:47:48.578: %LINK-5-CHANGED: Interface Ethernet7/3, changed state to administratively down
+Mar  7 00:29:51 192.168.4.254 109: *Mar  7 06:29:50.609: %SYS-5-CONFIG_I: Configured from console by console
+Mar  7 00:33:43 192.168.4.254 110: *Mar  7 06:33:42.452: %SYS-5-CONFIG_I: Configured from console by ecarrerag on vty0 (192.168.4.254)
+Mar  7 00:53:52 192.168.4.254 111: *Mar  7 06:53:51.661: %SYS-5-CONFIG_I: Configured from console by ecarrerag on vty1 (192.168.4.254)
+Mar  7 01:38:04 192.168.4.254 112: *Mar  7 07:38:03.469: %SYS-5-CONFIG_I: Configured from console by console
+Mar  7 01:44:38 192.168.4.254 113: *Mar  7 07:44:37.753: %SYS-5-CONFIG_I: Configured from console by ecarrerag on vty0 (192.168.4.254)
