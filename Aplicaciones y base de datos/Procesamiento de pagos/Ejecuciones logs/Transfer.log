@@ -1,0 +1,139 @@
+transferDB> db.transfers.find()
+[
+  {
+    _id: ObjectId('67cc8dd49701af77c7497427'),
+    account_number: '123456',
+    amount: 1000,
+    __v: 0
+  },
+  {
+    _id: ObjectId('67cc8dfd9701af77c7497429'),
+    account_number: '1234567',
+    amount: 1000,
+    __v: 0
+  },
+  {
+    _id: ObjectId('67cc8e049701af77c749742b'),
+    account_number: '0',
+    amount: 1000,
+    __v: 0
+  },
+  {
+    _id: ObjectId('67cc8e159701af77c749742d'),
+    account_number: '0',
+    amount: 1000,
+    __v: 0
+  },
+  {
+    _id: ObjectId('67cc8e169701af77c749742f'),
+    account_number: '0',
+    amount: 1000,
+    __v: 0
+  },
+  {
+    _id: ObjectId('67cc8e179701af77c7497431'),
+    account_number: '0',
+    amount: 1000,
+    __v: 0
+  },
+  {
+    _id: ObjectId('67cccb5fb3acd4778ed0918f'),
+    account_number: '1234567890',
+    amount: 1000,
+    timestamp: ISODate('2025-03-08T22:57:35.963Z'),
+    __v: 0
+  },
+  {
+    _id: ObjectId('67cccb61b3acd4778ed09191'),
+    account_number: '1234567890',
+    amount: 1000,
+    timestamp: ISODate('2025-03-08T22:57:37.912Z'),
+    __v: 0
+  },
+  {
+    _id: ObjectId('67ccd0d2b3acd4778ed09193'),
+    account_number: '1234567890',
+    amount: 1000,
+    timestamp: ISODate('2025-03-08T23:20:50.250Z'),
+    __v: 0
+  },
+  {
+    _id: ObjectId('67ccd0d4b3acd4778ed09195'),
+    account_number: '1234567890',
+    amount: 1000,
+    timestamp: ISODate('2025-03-08T23:20:52.783Z'),
+    __v: 0
+  },
+  {
+    _id: ObjectId('67ccd0d5b3acd4778ed09197'),
+    account_number: '1234567890',
+    amount: 1000,
+    timestamp: ISODate('2025-03-08T23:20:53.240Z'),
+    __v: 0
+  },
+  {
+    _id: ObjectId('67ccd32ab3acd4778ed09199'),
+    account_number: '1234567890',
+    amount: 1000,
+    timestamp: ISODate('2025-03-08T23:30:50.133Z'),
+    __v: 0
+  },
+  {
+    _id: ObjectId('67ccd366b3acd4778ed0919b'),
+    account_number: '1234567890',
+    amount: 1000,
+    timestamp: ISODate('2025-03-08T23:31:50.627Z'),
+    __v: 0
+  },
+  {
+    _id: ObjectId('67ccd368b3acd4778ed0919d'),
+    account_number: '1234567890',
+    amount: 1000,
+    timestamp: ISODate('2025-03-08T23:31:52.549Z'),
+    __v: 0
+  },
+  {
+    _id: ObjectId('67ccd369b3acd4778ed0919f'),
+    account_number: '1234567890',
+    amount: 1000,
+    timestamp: ISODate('2025-03-08T23:31:53.800Z'),
+    __v: 0
+  },
+  {
+    _id: ObjectId('67ccd370b3acd4778ed091a1'),
+    account_number: '1234567890',
+    amount: 1000,
+    timestamp: ISODate('2025-03-08T23:32:00.611Z'),
+    __v: 0
+  },
+  {
+    _id: ObjectId('67ccd377b3acd4778ed091a3'),
+    account_number: '1234567890',
+    amount: 1000,
+    timestamp: ISODate('2025-03-08T23:32:07.403Z'),
+    __v: 0
+  },
+  {
+    _id: ObjectId('67ccd37cb3acd4778ed091a5'),
+    account_number: '1234567890',
+    amount: 1000,
+    timestamp: ISODate('2025-03-08T23:32:12.965Z'),
+    __v: 0
+  },
+  {
+    _id: ObjectId('67ccd3e7b3acd4778ed091a7'),
+    account_number: '1234567890',
+    amount: 1000,
+    timestamp: ISODate('2025-03-08T23:33:59.390Z'),
+    __v: 0
+  },
+  {
+    _id: ObjectId('67ccd3ebb3acd4778ed091a9'),
+    account_number: '1234567890',
+    amount: 1000,
+    timestamp: ISODate('2025-03-08T23:34:03.960Z'),
+    __v: 0
+  }
+]
+Type "it" for more
+transferDB>
